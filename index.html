@@ -11,8 +11,9 @@
             <h1>Pesquisa Online</h1>
         </header>
         <section>
-            <fieldset>
             <!-- DADOS PESSOAIS -->
+            <!-- <fieldset>
+           
             <legend>Dados Pessoais</legend>
             <form action="" method="get">
             <label for="userName">Nome</label>
@@ -33,9 +34,26 @@
             <label for="userImage">Upload de foto</label>
             <input type="file" accept="image/*" name="userImage">
             <br>    
-            <button type="submit">Enviar</button>
+            
             </form>
+            </fieldset> -->
+
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p>Genero:</p>
+
+                <input type="radio" name="userGender" value="Feminino">
+                <label form="userGender">Feminino</label>
+                
+                <input type="radio" name="userGender" value="Masculino">
+                <label form="userGender">Masculino</label>
+                
+                <input type="radio" name="userGender" value="notInformed">
+                <label form="userGender">Prefiro não informar</label>
+
             </fieldset>
+            <button type="submit">Enviar</button>
         </section>
 
 </body>
