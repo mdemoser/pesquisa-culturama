@@ -41,7 +41,8 @@
             <small id="phoneHelp">Preencha com 11 dígitos no formato DDD sem espaços ou hífen </small>
             <br>   
             <label for="image">Upload de foto</label>
-            <input id="image" type="file" accept="image/*" name="userImage">
+            <input id="image" type="file" accept="image/*" name="userImage" aria-describedby="imageHelp">
+            <small id="imageHelp">Envie uma foto no formato PNG ou JPEG</small>
             <br>    
             
              </fieldset> 
@@ -163,8 +164,8 @@
             </fieldset>
          
 
-       <button type="submit">Enviar</button>
-       <button type="reset">Limpar</button>
+       <button type="submit" aria-label="Envia dados do formulário">Enviar</button>
+       <button type="reset" aria-label="Limpa dados do formulario">Limpar</button>
      </form>
     </section> 
    </main>
