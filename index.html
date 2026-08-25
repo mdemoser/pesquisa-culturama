@@ -37,7 +37,7 @@
             <input id="image" type="file" accept="image/*" name="userImage">
             <br>    
             
-            </form>
+            
             </fieldset> 
 
             <fieldset>
@@ -142,13 +142,23 @@
                 <br>
                 <textarea name="comentario" id="comment" rols="5" columns="40" placeholder="Escreva sua opinião aqui"></textarea>
             </fieldset>
-       <button type="submit">Enviar</button>
-      
-          </section>
 
+            <fieldset>
+                <legend>Confirmações</legend>
+                <input type="checkbox" name="userLgpd" id="userLgpd" value="accepted" required>
+                <label for="userLgpd">Eu aceito participar da pesquisa</label>
+                <br>
+                <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
+                <label for="userLgpdTerm">Desejo receber o resultado por email</label>
+                
+                <br>
             </fieldset>
-            <button type="submit">Enviar</button>
-        </section>
 
+       <button type="submit">Enviar</button>
+       <button type="reset">Limpar</button>
+
+            
+      </form>
+         
 </body>
 </html>
