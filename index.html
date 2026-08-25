@@ -11,18 +11,19 @@
     <title>Pesquisa Culturama</title>
 </head>
 <body>
-        <header>
+    <main>
+       <header>
             <img src="img/logo-culturama.png" alt="logo-culturama">
             <h1>Pesquisa Online</h1>
         </header>
         <section>
           
+            <form class="meu-formulario" action="" method="get">
             <!-- DADOS PESSOAIS -->
-
             <fieldset>
            
             <legend>Dados Pessoais</legend>
-            <form action="" method="get">
+           
             <label for="name">Nome</label>
             <input id="name" type="text" name="userName" required>
             <br>    
@@ -42,8 +43,8 @@
             <input id="image" type="file" accept="image/*" name="userImage">
             <br>    
             
+             </fieldset> 
             
-            </fieldset> 
 
             <fieldset>
                 <legend>Perfil</legend>
@@ -97,10 +98,10 @@
         <option value="Sergipe">Sergipe</option>
         <option value="Tocantins">Tocantins</option>
         </select>
-        <form action="" method="get">
         <label for="city">Cidade</label>
         <input id="city" type="text" name="userCity">
         <br>
+        </fieldset>
          <fieldset>
                 <legend>Hábitos</legend>
                 <p>Redes Sociais:</p>
@@ -127,7 +128,8 @@
                 <input type="color" name="userFavoriteColor" id="favoriteColor" >
             </fieldset>
             <fieldset>
-                <label>Satisfação:</label>
+                <legend>Opiniao</legend>
+                <p>Opinião:</p>
                 <br>
                <br>
                 <input id="otimo" type="radio" name="opiniao" value="otimo">
@@ -145,7 +147,7 @@
                 <br>
                 <label for="comment">Comentário:</label>
                 <br>
-                <textarea name="comentario" id="comment" rols="5" columns="40" placeholder="Escreva sua opinião aqui"></textarea>
+                <textarea name="comentario" id="comment" rows="5" cols="40" placeholder="Escreva sua opinião aqui"></textarea>
             </fieldset>
 
             <fieldset>
@@ -154,16 +156,16 @@
                 <label for="userLgpd">Eu aceito participar da pesquisa</label>
                 <br>
                 <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
-                <label for="userLgpdTerm">Desejo receber o resultado por email</label>
+                <label for="getResult">Desejo receber o resultado por email</label>
                 
                 <br>
             </fieldset>
+         
 
        <button type="submit">Enviar</button>
        <button type="reset">Limpar</button>
-
-            
-      </form>
-         
+     </form>
+    </section> 
+   </main>
 </body>
 </html>
