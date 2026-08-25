@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="culturama-favico.png">
     <title>Pesquisa Culturama</title>
 </head>
 <body>
-        <header>
-            <h1>Pesquisa Online</h1>
+    <main>
+       <header>
+            <img src="img/logo-culturama.png" alt="logo-culturama">
+            <h1>Pesquisa de opinião</h1>
         </header>
         <section>
           
+            <form class="meu-formulario" action="indexSucesso.html" method="get">
             <!-- DADOS PESSOAIS -->
-
             <fieldset>
            
             <legend>Dados Pessoais</legend>
-            <form action="" method="get">
+           
             <label for="name">Nome</label>
             <input id="name" type="text" name="userName" required>
             <br>    
@@ -37,8 +43,8 @@
             <input id="image" type="file" accept="image/*" name="userImage">
             <br>    
             
+             </fieldset> 
             
-            </fieldset> 
 
             <fieldset>
                 <legend>Perfil</legend>
@@ -92,10 +98,10 @@
         <option value="Sergipe">Sergipe</option>
         <option value="Tocantins">Tocantins</option>
         </select>
-        <form action="" method="get">
         <label for="city">Cidade</label>
         <input id="city" type="text" name="userCity">
         <br>
+        </fieldset>
          <fieldset>
                 <legend>Hábitos</legend>
                 <p>Redes Sociais:</p>
@@ -122,8 +128,9 @@
                 <input type="color" name="userFavoriteColor" id="favoriteColor" >
             </fieldset>
             <fieldset>
-                <label>Satisfação:</label>
-                <br>
+                <legend>Opiniao</legend>
+                <p>Opinião:</p>
+                <p>Qual a sua avaliação do nosso serviço?</p>
                <br>
                 <input id="otimo" type="radio" name="opiniao" value="otimo">
                  <label for="otimo">Ótimo</label>
@@ -140,7 +147,7 @@
                 <br>
                 <label for="comment">Comentário:</label>
                 <br>
-                <textarea name="comentario" id="comment" rols="5" columns="40" placeholder="Escreva sua opinião aqui"></textarea>
+                <textarea name="comentario" id="comment" placeholder="Escreva sua opinião aqui"></textarea>
             </fieldset>
 
             <fieldset>
@@ -149,16 +156,16 @@
                 <label for="userLgpd">Eu aceito participar da pesquisa</label>
                 <br>
                 <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
-                <label for="userLgpdTerm">Desejo receber o resultado por email</label>
+                <label for="getResult">Desejo receber o resultado por email</label>
                 
                 <br>
             </fieldset>
+         
 
        <button type="submit">Enviar</button>
        <button type="reset">Limpar</button>
-
-            
-      </form>
-         
+     </form>
+    </section> 
+   </main>
 </body>
 </html>
